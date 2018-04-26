@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rainbow</title>
+</head>
+<body>
+    <button id="button">Click Me</button>
+    <script>
+        var button= document.getElementById('button');
+        var rainbow = ["red", "Orange","yellow", "green", "blue", "indego","violet"]; //Declaring rainbow as Array//
+        function change(){
+            document.body.style.background = rainbow[Math.floor(7*Math.random())];  //Using built-in Math function//
+        }
+        button.addEventListener('click',change); //calling the funcition//
+    </script>
+</body>
+</html>
